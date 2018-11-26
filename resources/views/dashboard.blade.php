@@ -3,7 +3,7 @@
 
 
 <!-- Page Banner Start -->
-<div id="page-banner-area" class="page-banner">
+<!-- <div id="page-banner-area" class="page-banner">
   <div class="page-banner-title">
     <div class="text-center">
       <h2>Dashboard</h2>
@@ -12,7 +12,7 @@
       <span class="current">Dashboard</span>
     </div>
   </div>
-</div>
+</div> -->
 <!-- Page Banner End -->
 
 <!-- Ueser Section Start -->
