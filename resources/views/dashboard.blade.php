@@ -1,20 +1,6 @@
 @extends('layouts.header')
 @section('head')
 
-
-<!-- Page Banner Start -->
-<!-- <div id="page-banner-area" class="page-banner">
-  <div class="page-banner-title">
-    <div class="text-center">
-      <h2>Dashboard</h2>
-      <a href="#"><i class="lni-home"></i> Home</a>
-      <span class="crumbs-spacer"><i class="lni-chevron-right"></i></span>
-      <span class="current">Dashboard</span>
-    </div>
-  </div>
-</div> -->
-<!-- Page Banner End -->
-
 <!-- Ueser Section Start -->
 <section class="user-page section-padding">
     <div class="container">
@@ -41,7 +27,7 @@
                 </a>
               </li>
               <li>
-                <a href="my-properties.html">
+                <a href="/my-properties">
                   <i class="lni-home"></i>My Properties
                 </a>
               </li>
@@ -51,7 +37,7 @@
                 </a>
               </li>
               <li>
-                <a href="submit-property.html">
+                <a href="/submit-property">
                   <i class="lni-plus"></i>Submit New Property
                 </a>
               </li>

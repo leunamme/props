@@ -15,20 +15,22 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/login', function () {
-    return view('login');
+Route::get('/listings', function () {
+    return view('listings');
 });
 
-Route::get('/signup', function () {
-    return view('signup');
+Route::get('/property', function () {
+    return view('property');
 });
 
-Route::get('/search', function () {
-    return view('search');
+
+    //==== When signed in ====//
+Route::get('/submit-property', function () {
+    return view('submit-property');
 });
 
-Route::get('/result', function () {
-    return view('result');
+Route::get('/my-properties', function () {
+    return view('my-properties');
 });
 
 Route::get('/dashboard', function () {

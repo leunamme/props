@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Owner Direct</title>
+    <title>E3 Homes</title>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
@@ -51,12 +51,12 @@
             </div>
             <div class="col-lg-5 col-md-3 col-xs-12">
               <div class="header-top-right float-right">
-                  
+
+                <!-- login/register and logout -->
                 @if (Auth::guest())
                     <a href="{{ route('login') }}" class="header-top-button">Log In</a>
                     <a href="{{ route('register') }}" class="header-top-button white-bg">Sign Up</a>
                 @else
-                    <!-- <a href="{{ route('logout') }}" class="header-top-button white-bg">Logout</a> -->
                     <form id="logout-form" action="{{ route('logout') }}" method="POST">
                         {{ csrf_field() }}
                         <button type="submit" class="header-top-button white-bg">Logout</button>
@@ -90,17 +90,17 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contact.html">
-                  Aobut
+                <a class="nav-link" href="/listings">
+                  About
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contact.html">
+                <a class="nav-link" href="/property">
                   Pricing
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contact.html">
+                <a class="nav-link" href="/submit-property">
                   Contact Us
                 </a>
               </li>
@@ -146,66 +146,6 @@
             <!-- FOOTER  -->
 
 
-          <!-- Footer Section Start -->
-    <footer id="footer" class="footer-area section-padding">
-      <div class="container">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
-              <h3 class="footer-titel">About <span>Us</span></h3>
-              <ul class="footer-link">
-                <li><a href="#">Company</a></li>
-                <li><a href="#">Team</a></li>
-                <li><a href="#">Career</a></li>
-                <li><a href="#">Graphic Design</a></li>
-                <li><a href="#">Documentation</a></li>
-              </ul>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
-              <h3 class="footer-titel">Usefull<span> Links</span></h3>
-              <ul class="footer-link">
-                <li><a href="#">Bayonne, New York</a></li>
-                <li><a href="#">Greenville, Chicago</a></li>
-                <li><a href="#">The Heights, New Jersey</a></li>
-                <li><a href="#">Bayonne, Washington DC</a></li>
-                <li><a href="#">Greenville, San Francisco</a></li>
-              </ul>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
-              <h3 class="footer-titel">Contact <span>Info</span></h3>
-              <ul class="address">
-                <li>
-                  <a href="#"><i class="lni-map-marker"></i> York Blvd, Los Angeles, US<br> View, CA 94041USA</a>
-                </li>
-                <li>
-                  <a href="#"><i class="lni-phone-handset"></i> (518) 2014-040 43</a>
-                </li>
-                <li>
-                  <a href="#"><i class="lni-envelope"></i> <span class="__cf_email__" data-cfemail="fa929f969695ba9f898e9b8e9f82d4999597">[email&#160;protected]</span></a>
-                </li>
-              </ul>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
-              <h3 class="footer-titel">Subscribe <span>on Our News</span></h3>
-              <form method="post" id="subscribe-form" name="subscribe-form" class="validate">
-                <div class="form-group is-empty">
-                  <input type="email" value="" name="Email" class="form-control" id="EMAIL" placeholder="Email address" required="">
-                  <button type="submit" name="subscribe" id="subscribes" class="btn btn-common sub-btn"><i class="lni-envelope"></i></button>
-                  <div class="clearfix"></div>
-                </div>
-              </form>
-              <div class="social-icon">
-                <a class="facebook" href="#"><i class="lni-facebook-filled"></i></a>
-                <a class="twitter" href="#"><i class="lni-twitter-filled"></i></a>
-                <a class="instagram" href="#"><i class="lni-instagram-filled"></i></a>
-                <a class="linkedin" href="#"><i class="lni-linkedin-filled"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!-- Footer Section End -->
 
     <section id="copyright">
       <div class="container">
